@@ -12,8 +12,3 @@ console.log(addititon);
 let subtraction = (num1, num2) => num1 - num2
 let subRes = calc(100, 90, subtraction)
 console.log(subRes)
-
-
-
-// Practically
-
