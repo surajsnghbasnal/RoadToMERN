@@ -1,5 +1,7 @@
 
 function User(){
+    
+    
     return(
         <div>
             <h1>This is Functional Component.</h1>
