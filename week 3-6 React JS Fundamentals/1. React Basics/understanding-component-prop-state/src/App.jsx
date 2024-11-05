@@ -1,27 +1,17 @@
-import User from "./Functional Components/User"
-import User2 from "./Class Components/User2"
-import States from "./Functional Components/States"
-import Props from "./Functional Components/Props"
+import { useState } from "react"
+import Student from "./Functional Components/Student"
 
 function App() {
 
-  const Apple = () => {
-    alert("clicked function")
 
-    return (
-      <h1>this is apple Component, under the App component.</h1>
-    )
-  }
 
   return (
     <>
-      {/* <User />
-      <User2 /> */}
-      {/* <Apple/> */}
-      <h1>Suraj Basnal</h1>
-      <button onClick={Apple}>Click me</button>
-      <States/>
-      <Props name="Suraj" email="suraj@gmail.com"/>
+      <h1>Student component</h1>
+      <Student name="Shashi" RollNo="10099" add="Gautam nagar, Delhi" />
+      <Student name="Suraj" RollNo="10100" add="Indirapuram, Ghaziabad" />
+      <Student name="Sandeep" RollNo="10101" add="Arjun Nagar, Delhi" />
+      
     </>
   )
 }
