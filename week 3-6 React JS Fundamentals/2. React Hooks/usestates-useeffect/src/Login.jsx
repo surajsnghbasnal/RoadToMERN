@@ -1,38 +1,32 @@
 import React, { useState } from 'react'
 
 const Login = () => {
-    const [user, setUser] = useState('')
-    const [pw, setPw] = useState('')
+    const [username, setUsername] = useState("")
+    const [pass, setPass] = useState("")
+    const [userErr, setUserErr] = useState(true)
+    const [passErr, setPassErr] = useState(true)
+    // const [login, setLogin] = useState(true)
 
-    const loginHandler = (e) => {
+    const loginHandle = (e) => {
         e.preventDefault()
+        username.length <= 10 ? setUserErr(false) : setUserErr(true)
+        pass.length <= 8 ? setPassErr(false) : setPassErr(true)
     }
 
-    const UsernameHandler = (e) => {
-        setUser(e.target.value)
-    }
-    
-return (
-    <div>
-        <form onSubmit={loginHandler}>
-            <h1>Login</h1>
-            <input
-                type='text'
-                placeholder='Enter Your Username'
-                onChange={UsernameHandler} />
-                <p>{user.length<8? <p>Enter Valid Username</p>:null}</p>
-            <br /><br />
 
-            <input type='password' placeholder='Enter Your Password' onChange={(e) => { setPw(e.target.value) }} />
-            <p>{pw.length<8? <p>Enter Valid Password</p>:null}</p>
-            <br /><br />
+    return (
+        <div>
+            <form style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }} onSubmit={loginHandle}>
+                <input type='text' placeholder='Enter Username' onChange={(e) => setUsername(e.target.value)} />
+                {userErr ? <span></span> : <span style={{ color: 'red' }}>Enter valid Username</span>}<br />
 
-            <button>Submit</button>
-            <h1>{user}</h1>
-            <h1>{pw}</h1>
-        </form>
-    </div>
-)
+                <input type='text' placeholder='Enter Password' onChange={(e) => setPass(e.target.value)} />
+                {passErr ? <span></span> : <span style={{ color: 'red' }}>Enter valid Password</span>}<br />
+
+                <button type='submit'>Submit</button>
+            </form>
+        </div>
+    )
 }
 
 export default Login
