@@ -23,7 +23,7 @@
 //* forwardRef
 
 import React, { useRef } from 'react'
-import User from './User'
+import User from './UserRef.jsx'
 
 const App = () => {
     const inputRef = useRef(null)
