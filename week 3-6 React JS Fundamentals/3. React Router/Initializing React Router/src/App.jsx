@@ -6,6 +6,7 @@ import Contact from './components/Contact'
 import Nav from './components/Nav'
 import Page404 from './components/Page404'
 import Users from './components/Users'
+import './index.css'
 
 const App = () => {
   return (
