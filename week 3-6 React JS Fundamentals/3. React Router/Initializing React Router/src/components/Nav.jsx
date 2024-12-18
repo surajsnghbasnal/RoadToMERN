@@ -8,6 +8,7 @@ const Nav = () => {
             <p><Link to="/">Home</Link></p>
             <p><Link to="/About">About</Link></p>
             <p><Link to="/Contact">Contact</Link></p>
+            <p><Link to="/User">User</Link></p>
         </div>
     )
 }
