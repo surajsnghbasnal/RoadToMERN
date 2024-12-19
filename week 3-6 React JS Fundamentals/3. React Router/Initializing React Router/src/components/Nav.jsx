@@ -7,6 +7,7 @@ const Nav = () => {
             <p><NavLink className='navBarLink' to="/">Home</NavLink></p>
             <p><NavLink className='navBarLink' to="/About">About</NavLink></p>
             <p><NavLink className='navBarLink' to="/Contact">Contact</NavLink></p>
+            <p><NavLink className='navBarLink' to="/Filter">Filter</NavLink></p>
         </div>
     )
 }
