@@ -1,0 +1,34 @@
+{
+  "students": [
+    {
+      "name": "Aryan Sharma",
+      "rollNo": 101,
+      "class": "10th",
+      "location": "Delhi"
+    },
+    {
+      "name": "Pooja Verma",
+      "rollNo": 102,
+      "class": "10th",
+      "location": "Mumbai"
+    },
+    {
+      "name": "Rahul Singh",
+      "rollNo": 103,
+      "class": "9th",
+      "location": "Bangalore"
+    },
+    {
+      "name": "Sneha Gupta",
+      "rollNo": 104,
+      "class": "8th",
+      "location": "Chennai"
+    },
+    {
+      "name": "Amit Patil",
+      "rollNo": 105,
+      "class": "11th",
+      "location": "Pune"
+    }
+  ]
+}
