@@ -5,16 +5,26 @@ import { useEffect } from 'react'
 const GetApi = () => {
     const [student, setStudent] = useState([])
 
-    useEffect(() => {
+    const getData = () => {
         fetch('http://localhost:8000/students').then((result) => {
             result.json().then((res) => {
                 setStudent(res)
             })
         })
+    }
+    useEffect(() => {
+        getData()
     }, [])
-    console.log(student)
 
-
+    const deleteUser = (id) => {
+        fetch(`http://localhost:8000/students/${id}`, {
+            method: 'DELETE'
+        }).then((result) => {
+            result.json().then((res) => {
+                getData()
+            })
+        })
+    }
 
     return (
         <div>
@@ -36,6 +46,9 @@ const GetApi = () => {
                             <td style={{ border: '1px solid ' }}>{item.name}</td>
                             <td style={{ border: '1px solid ' }}>{item.std}</td>
                             <td style={{ border: '1px solid ' }}>{item.location}</td>
+                            <td>
+                                <button onClick={() => deleteUser(item.id)}>Delete</button>
+                            </td>
                         </tr>
                     ))}
                 </tbody>

@@ -3,35 +3,35 @@
     {
       "name": "Aryan Sharma",
       "rollNo": 101,
-      "class": "10th",
+      "std": "10th",
       "location": "Delhi",
       "id": "966d"
     },
     {
       "name": "Pooja Verma",
       "rollNo": 102,
-      "class": "10th",
+      "std": "10th",
       "location": "Mumbai",
       "id": "d2b5"
     },
     {
       "name": "Rahul Singh",
       "rollNo": 103,
-      "class": "9th",
+      "std": "9th",
       "location": "Bangalore",
       "id": "55fd"
     },
     {
       "name": "Sneha Gupta",
       "rollNo": 104,
-      "class": "8th",
+      "std": "8th",
       "location": "Chennai",
       "id": "895e"
     },
     {
       "name": "Amit Patil",
       "rollNo": 105,
-      "class": "11th",
+      "std": "11th",
       "location": "Pune",
       "id": "65ed"
     },
@@ -39,15 +39,8 @@
       "id": "5979",
       "name": "sakshi Sharma",
       "rollNo": 109,
-      "class": "10th",
+      "std": "10th",
       "location": "Pune"
-    },
-    {
-      "id": "b2e3",
-      "name": "suraj",
-      "rollNo": "21",
-      "std": "11th",
-      "location": "delhi"
     }
   ]
 }
