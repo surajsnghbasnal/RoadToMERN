@@ -23,8 +23,8 @@ const PostAPI = () => {
     }
 
     return (
-        <div>
-            <h1>POST API Method.</h1>
+        <div className='add'>
+            <h2>POST API Method.</h2>
             <input
                 type='text'
                 value={name}

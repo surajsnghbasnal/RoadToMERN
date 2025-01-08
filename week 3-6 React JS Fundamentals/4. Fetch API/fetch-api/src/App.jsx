@@ -5,10 +5,11 @@ import Delete from './Components/Delete'
 
 const App = () => {
   return (
-    <div>
-      {/* <GetApi/> */}
-      {/* <PostAPI/> */}
-      <Delete />
+    <div >
+      <div>
+        {/* <GetApi/> */}
+        <Delete />
+      </div>
     </div>
   )
 }
