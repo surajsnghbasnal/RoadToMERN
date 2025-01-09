@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import { useEffect } from 'react'
 
-const GetApi = () => {
+const MiniProject = () => {
     const [student, setStudent] = useState([])
 
     const getData = () => {
@@ -16,10 +16,19 @@ const GetApi = () => {
         getData()
     }, [])
 
+    const [show, setShow] = useState(false)
     const [name, setName] = useState('')
     const [rollNo, setRollNo] = useState(0)
     const [std, setStd] = useState('')
     const [location, setLocation] = useState('')
+
+    const [newName, setNewName] = useState('')
+    const [newRollNo, setNewRollNo] = useState(0)
+    const [newStd, setNewStd] = useState('')
+    const [newLocation, setNewLocation] = useState('')
+
+
+
 
     const handleSave = () => {
         fetch('http://localhost:8000/students', {
@@ -46,6 +55,14 @@ const GetApi = () => {
         })
     }
 
+    const updateUser = (id) => {
+        setNewName(student[id].name)
+        setNewRollNo(student[id].rollNo)
+        setNewStd(student[id].std)
+        setNewLocation(student[id].location)
+        setShow(true)
+    }
+
     return (
         <div className="App">
             <div className="container">
@@ -59,6 +76,7 @@ const GetApi = () => {
                                 <th style={{ border: '1px solid ' }}>Class</th>
                                 <th style={{ border: '1px solid ' }}>Location</th>
                                 <th style={{ border: '1px solid ' }}>Delete</th>
+                                <th style={{ border: '1px solid ' }}>Update</th>
                             </tr>
                         </thead>
                         <tbody style={{ border: '1px solid ' }}>
@@ -71,13 +89,30 @@ const GetApi = () => {
                                     <td>
                                         <button onClick={() => deleteUser(item.id)}>Delete</button>
                                     </td>
+                                    <td>
+                                        <button onClick={() => updateUser(item.id)}>View</button>
+                                    </td>
                                 </tr>
                             ))}
                         </tbody>
                     </table>
                 </div>
+                {
+                    show ?
+                        <div className="overlap">
+                            <div className="add">
+                                <h2>User</h2>
+                                <p>Name: <span className='value'>{newName}</span></p>
+                                <p>Roll No.: <span className='value'>{newRollNo}</span></p>
+                                <p>Class: <span className='value'>{newStd}</span></p>
+                                <p>Location: <span className='value'>{newLocation}</span></p>
+                                <button onClick={() => setShow(false)}>Close</button>
+                            </div>
+                        </div>
+                        : null
+                }
                 <div className='add'>
-                    <h2>POST API Method.</h2>
+                    <h1>POST API Method.</h1>
                     <input
                         type='text'
                         value={name}
@@ -118,4 +153,4 @@ const GetApi = () => {
 }
 
 
-export default GetApi
+export default MiniProject

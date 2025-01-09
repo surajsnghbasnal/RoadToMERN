@@ -5,45 +5,45 @@
       "rollNo": 101,
       "std": "10th",
       "location": "Delhi",
-      "id": "966d"
+      "id": 0
     },
     {
       "name": "Pooja Verma",
       "rollNo": 102,
       "std": "10th",
       "location": "Mumbai",
-      "id": "d2b5"
+      "id": 1
     },
     {
       "name": "Rahul Singh",
       "rollNo": 103,
       "std": "9th",
       "location": "Bangalore",
-      "id": "55fd"
+      "id": 2
     },
     {
       "name": "Sneha Gupta",
       "rollNo": 104,
       "std": "8th",
       "location": "Chennai",
-      "id": "895e"
+      "id": 3
     },
     {
       "name": "Amit Patil",
       "rollNo": 105,
       "std": "11th",
       "location": "Pune",
-      "id": "65ed"
+      "id": 4
     },
     {
-      "id": "5979",
+      "id": 5,
       "name": "sakshi Sharma",
       "rollNo": 109,
       "std": "10th",
       "location": "Pune"
     },
     {
-      "id": "5737",
+      "id": 6,
       "name": "SURAJ SINGH BASNAL",
       "rollNo": "112",
       "std": "11Th",

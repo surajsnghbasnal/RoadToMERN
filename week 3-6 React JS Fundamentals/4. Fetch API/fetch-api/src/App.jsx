@@ -1,14 +1,14 @@
 import React from 'react'
 import GetApi from './Components/GetAPI'
 import PostAPI from './Components/PostAPI'
-import Delete from './Components/Delete'
+import MiniProject from './Components/MiniProject'
 
 const App = () => {
   return (
     <div >
       <div>
         {/* <GetApi/> */}
-        <Delete />
+        <MiniProject />
       </div>
     </div>
   )
