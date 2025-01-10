@@ -2,52 +2,51 @@
   "students": [
     {
       "name": "Aryan Sharma",
-      "rollNo": 101,
+      "rollNo": 1,
       "std": "10th",
-      "location": "Delhi",
-      "id": 0
+      "location": "Delhi"
     },
     {
       "name": "Pooja Verma",
-      "rollNo": 102,
+      "rollNo": 2,
       "std": "10th",
-      "location": "Mumbai",
-      "id": 1
+      "location": "Mumbai"
     },
     {
       "name": "Rahul Singh",
-      "rollNo": 103,
+      "rollNo": 3,
       "std": "9th",
-      "location": "Bangalore",
-      "id": 2
+      "location": "Bangalore"
     },
     {
       "name": "Sneha Gupta",
-      "rollNo": 104,
+      "rollNo": 4,
       "std": "8th",
-      "location": "Chennai",
-      "id": 3
+      "location": "Chennai"
     },
     {
       "name": "Amit Patil",
-      "rollNo": 105,
+      "rollNo": 5,
       "std": "11th",
-      "location": "Pune",
-      "id": 4
+      "location": "Pune"
     },
     {
-      "id": 5,
       "name": "sakshi Sharma",
-      "rollNo": 109,
+      "rollNo": 6,
       "std": "10th",
       "location": "Pune"
     },
     {
-      "id": 6,
       "name": "SURAJ SINGH BASNAL",
-      "rollNo": "112",
+      "rollNo": 7,
       "std": "11Th",
       "location": "Indirapuram"
+    },
+    {
+      "name": "Sandeep Yadav",
+      "rollNo": 8,
+      "std": "12th",
+      "location": "Delhi"
     }
   ]
 }
